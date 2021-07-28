@@ -11,8 +11,7 @@
     --cor5: #2B2E36;
     --font0: 'Noto Sans JP', sans-serif;
 }
-/*
-espeçuras da fonte:
+/*espeçuras da fonte:
     Thin 100
     Light 300
     Regular 400
@@ -24,9 +23,11 @@ espeçuras da fonte:
     font-family: var(--font0);
     margin: 0;
 }
+/*--------------------------------------------*/
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     text-align: center;
+    box-shadow: 0 7px 6px 0px #09353659;
 }
 header h1{
     font-size: 2.5em;
@@ -36,15 +37,17 @@ header h1{
 header p{
     font-size: .85em;
     font-weight: 300;
-    color: var(--cor4);
+    color: var(--cor0);
 }
 nav {
     text-align: left;
     padding: 10px;
+
 }
 nav ul{
     margin: 0;
     padding: 0;
+    
 }
 nav a{
     text-decoration: none;
@@ -52,9 +55,14 @@ nav a{
     font-size: .85em;
     padding: 10px;
 }
+nav a:hover{
+    color: var(--cor4);
+    border-bottom: solid 3px var(--cor4);
+}
+/*--------------------------------------------*/
 main{
     background-color: var(--cor0);
-    max-width: 740px;
+    max-width: 800px;
     min-height: 900px;
     margin: auto;
 }
@@ -63,30 +71,30 @@ main *{
     margin: auto;
 }
 main article{
-    margin: auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     max-width: 700px;
     text-indent: 1em;
-    padding: 0 15px 15px;
+    padding: 0 25px 25px;
     border-radius: 0 0 5px 5px;
     text-align: justify;
+    font-size: .9em;
+    font-weight: 300;
+    box-shadow: 0 7px 6px 0px #09353659;
 }
 main article h1{
     font-size: 1.7em;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 20px;
+}
+div.text{
+    padding: 30px;
+}
+div.imgBox{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 div.imagem{
-    display: inline-block;
-    text-align: center;
-    font-size: 1em;
-    line-height: 45px;
-    text-indent: 0;
-    color: #fff;
-    margin: 10px 25px;
-    width: 90px;
-    height: 90px;
-    background-color: var(--cor1);
 }
 div.midia{
     background-color: var(--cor5);
@@ -96,7 +104,8 @@ div.midia{
     width: 250px;
     height: 200px;
     border-radius: 5px;
-    margin: auto;
+    margin: 70px auto;
+    box-shadow: 0 7px 6px 0px #09353659;
 }
 button{
     width: 250px;
@@ -104,22 +113,39 @@ button{
     background-color: var(--cor1);
     border: 0;
     border-radius: 5px;
+    box-shadow: 0 7px 6px 0px #09353659;
 }
 button a{
     text-decoration: none;
     color: var(--cor4);
 }
+/*--------------------------------------------*/
 footer{
     background-color: var(--cor0);
-    max-width: 740px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
 }
 footer p{
     color: var(--cor4);
-    font-size: .7em;
+    font-size: .65em;
     padding: 20px;
 }
 footer a{
     text-decoration: none;
+}
+div.icon{
+    display: inline-block;
+    margin: 0 50px;
+}
+div.licence{
+    text-align: center;
+    font-size: .5em;
+    color: hsla(0, 0%, 0%, 0.2);
+    padding-bottom: 15px;
+}
+div.licence a{    
+    text-decoration: none;
+    display: inline;
+    color: hsla(0, 0%, 0%, 0.2);
 }
