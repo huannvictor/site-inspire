@@ -1,10 +1,125 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 :root{
     --cor0: #D2E6F1;
     --cor1: #52D9CB;
     --cor2: #278C82;
-    --cor3: #093536;
+    --cor3: #093536d7;
     --cor4: #414550;
     --cor5: #2B2E36;
+    --font0: 'Noto Sans JP', sans-serif;
+}
+/*
+espeçuras da fonte:
+    Thin 100
+    Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900
+*/
+*{
+    font-family: var(--font0);
+    margin: 0;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    text-align: center;
+}
+header h1{
+    font-size: 2.5em;
+    color: #fff;
+    padding-top: 20px;
+}
+header p{
+    font-size: .85em;
+    font-weight: 300;
+    color: var(--cor4);
+}
+nav {
+    text-align: left;
+    padding: 10px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: .85em;
+    padding: 10px;
+}
+main{
+    background-color: var(--cor0);
+    max-width: 740px;
+    min-height: 900px;
+    margin: auto;
+}
+main *{
+    display: block;
+    margin: auto;
+}
+main article{
+    margin: auto;
+    background-color: #fff;
+    max-width: 700px;
+    text-indent: 1em;
+    padding: 0 15px 15px;
+    border-radius: 0 0 5px 5px;
+    text-align: justify;
+}
+main article h1{
+    font-size: 1.7em;
+    text-align: center;
+    padding: 10px;
+}
+div.imagem{
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 45px;
+    text-indent: 0;
+    color: #fff;
+    margin: 10px 25px;
+    width: 90px;
+    height: 90px;
+    background-color: var(--cor1);
+}
+div.midia{
+    background-color: var(--cor5);
+    color: var(--cor0);
+    text-align: center;
+    line-height: 200px;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    margin: auto;
+}
+button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--cor1);
+    border: 0;
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+footer{
+    background-color: var(--cor0);
+    max-width: 740px;
+    margin: auto;
+    text-align: center;
+}
+footer p{
+    color: var(--cor4);
+    font-size: .7em;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
 }
