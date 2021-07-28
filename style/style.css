@@ -94,8 +94,6 @@ div.imgBox{
     justify-content: space-around;
     flex-direction: row;
 }
-div.imagem{
-}
 div.midia{
     background-color: var(--cor5);
     color: var(--cor0);
