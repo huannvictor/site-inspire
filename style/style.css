@@ -27,7 +27,7 @@
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     text-align: center;
-    box-shadow: 0 7px 6px 0px #09353659;
+    box-shadow: 0 3px 6px #09353659;
 }
 header h1{
     font-size: 2.5em;
@@ -42,12 +42,10 @@ header p{
 nav {
     text-align: left;
     padding: 10px;
-
 }
 nav ul{
     margin: 0;
     padding: 0;
-    
 }
 nav a{
     text-decoration: none;
@@ -89,11 +87,6 @@ main article h1{
 div.text{
     padding: 30px;
 }
-div.imgBox{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
 div.midia{
     background-color: var(--cor5);
     color: var(--cor0);
@@ -105,17 +98,25 @@ div.midia{
     margin: 70px auto;
     box-shadow: 0 7px 6px 0px #09353659;
 }
-button{
+img{
+    width: 100%;
+}
+section a{
+    text-decoration: none;
     width: 250px;
     height: 50px;
     background-color: var(--cor1);
     border: 0;
     border-radius: 5px;
     box-shadow: 0 7px 6px 0px #09353659;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
 }
-button a{
-    text-decoration: none;
-    color: var(--cor4);
+section a:hover, div.icon:hover{
+    transform: scale(120%);
+    transition: .3s;
 }
 /*--------------------------------------------*/
 footer{
@@ -129,21 +130,17 @@ footer p{
     font-size: .65em;
     padding: 20px;
 }
-footer a{
+footer p a{
     text-decoration: none;
 }
 div.icon{
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 20px;
 }
-div.licence{
+div.licence, div.licence a{
     text-align: center;
-    font-size: .5em;
-    color: hsla(0, 0%, 0%, 0.2);
-    padding-bottom: 15px;
-}
-div.licence a{    
+    font-size: .55rem;
+    color: hsla(0, 0%, 0%, 0.7);
+    padding-bottom: 15px;    
     text-decoration: none;
-    display: inline;
-    color: hsla(0, 0%, 0%, 0.2);
 }
