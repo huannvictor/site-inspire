@@ -2,6 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
+@font-face {
+    font-family: 'Harbell';
+    src: url(/fonts/harbell.ttf) format('TrueType');
+    font-weight: lighter;
+}
+/*espeçuras da fonte Google:
+    Thin 100
+    Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900
+*/
+
 :root{
     --cor0: #D2E6F1;
     --cor1: #52D9CB;
@@ -10,15 +24,8 @@
     --cor4: #414550;
     --cor5: #2B2E36;
     --font0: 'Noto Sans JP', sans-serif;
+    --font1: 'Harbell', sans-serif;
 }
-/*espeçuras da fonte:
-    Thin 100
-    Light 300
-    Regular 400
-    Medium 500
-    Bold 700
-    Black 900
-*/
 *{
     font-family: var(--font0);
     margin: 0;
@@ -30,7 +37,9 @@ header{
     box-shadow: 0 3px 6px #09353659;
 }
 header h1{
-    font-size: 2.5em;
+    font-family: var(--font1);
+    font-weight: lighter;
+    font-size: 4em;
     color: #fff;
     padding-top: 20px;
 }
